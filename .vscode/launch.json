@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GobreadApplication<gobread>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "vn.banhmi.gobread.GobreadApplication",
+            "projectName": "gobread",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
