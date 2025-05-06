@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -22,15 +23,13 @@ public class UserController {
 
     @RequestMapping("/")
     public String getHomePage(Model model) {
-        model.addAttribute("eric", "test");
-        model.addAttribute("hoidanit", "from controller with model");
+
         return "admin/user/index";
     }
 
     @RequestMapping("/login")
     public String getLoginPage(Model model) {
-        model.addAttribute("eric", "test");
-        model.addAttribute("hoidanit", "from controller with model");
+
         return "pages-login";
     }
 
@@ -42,16 +41,16 @@ public class UserController {
     }
 
     @RequestMapping("/admin/user/{id}")
-    public String getUserDetailPage(Model model) {
-
-        model.addAttribute("newUser", new User());
-        return "admin/user/pages-register";
+    public String getUserDetailPage(@PathVariable long id, Model model) {
+        User user = this.userService.getUserById(id);
+        model.addAttribute("user", user);
+        model.addAttribute("id", id);
+        return "admin/user/show";
     }
 
     @RequestMapping("/admin/user/create")
     public String getRegisterPage(Model model) {
-        model.addAttribute("eric", "test");
-        model.addAttribute("hoidanit", "from controller with model");
+
         return "admin/user/pages-register";
     }
 

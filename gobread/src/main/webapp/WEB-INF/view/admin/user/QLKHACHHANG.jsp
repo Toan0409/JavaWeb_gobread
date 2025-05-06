@@ -1,6 +1,7 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+
       <!DOCTYPE html>
       <html lang="en">
 
@@ -16,7 +17,9 @@
         <link href="/assets/img/breadlogo.png" rel="icon">
         <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+
         <!-- Google Fonts -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
         <link href="https://fonts.gstatic.com" rel="preconnect">
         <link
           href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -457,7 +460,7 @@
               }
 
               .container {
-                max-width: 1000px;
+                max-width: 1600px;
                 margin: auto;
                 background: white;
                 padding: 20px;
@@ -534,9 +537,18 @@
                     <td>${user.phoneNumber}</td>
                     <td>${user.address}</td>
                     <td>
-                      <a href="/admin/user/${user.id}" class="btn btn-success  ">Xem</a>
-                      <button class="btn btn-edit">Sửa</button>
-                      <button class="btn btn-delete">Xóa</button>
+                      <a href="/admin/user/${user.id}" class="btn btn-sm btn-primary" title="Xem chi tiết">
+                        <i class="fa fa-eye">
+                        </i>
+                      </a>
+                      <a href="user/create" class="btn btn-sm btn-secondary" title="Xem chi tiết">
+                        <i class="fa fa-pen">
+                        </i>
+                      </a>
+                      <a href="user/create" class="btn btn-sm btn-danger" title="Xem chi tiết">
+                        <i class="fa fa-trash">
+                        </i>
+                      </a>
                     </td>
                   </tr>
                 </c:forEach>
