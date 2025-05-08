@@ -443,78 +443,6 @@
             </nav>
           </div><!-- End Page Title -->
 
-
-          <!DOCTYPE html>
-          <html lang="vi">
-
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Quản Lý Khách Hàng</title>
-            <style>
-              body {
-                font-family: Arial, sans-serif;
-                margin: 20px;
-                padding: 20px;
-                background-color: #f8f9fa;
-              }
-
-              .container {
-                max-width: 1600px;
-                margin: auto;
-                background: white;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-              }
-
-              h2 {
-                text-align: center;
-              }
-
-              table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 20px;
-              }
-
-              th,
-              td {
-                border: 1px solid #ddd;
-                padding: 10px;
-                text-align: center;
-              }
-
-              th {
-                background-color: #17a2b8;
-                color: white;
-              }
-
-              .btn {
-                padding: 5px 10px;
-                margin: 2px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-              }
-
-              .btn-add {
-                background-color: #28a745;
-                color: white;
-              }
-
-              .btn-edit {
-                background-color: #007bff;
-                color: white;
-              }
-
-              .btn-delete {
-                background-color: #dc3545;
-                color: white;
-              }
-            </style>
-          </head>
-
           <body>
             <div class="container">
               <h2>Quản Lý Khách Hàng</h2>
@@ -541,7 +469,7 @@
                         <i class="fa fa-eye">
                         </i>
                       </a>
-                      <a href="user/create" class="btn btn-sm btn-secondary" title="Xem chi tiết">
+                      <a href="/admin/user/update/${user.id}" class="btn btn-sm btn-secondary" title="Xem chi tiết">
                         <i class="fa fa-pen">
                         </i>
                       </a>
@@ -557,9 +485,6 @@
               </table>
             </div>
           </body>
-
-          </html>
-
 
         </main><!-- End #main -->
 

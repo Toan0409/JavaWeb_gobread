@@ -17,6 +17,7 @@ public class User {
     private String password;
     private long phoneNumber;
     private String address;
+    private boolean terms;
 
     public long getId() {
         return id;
@@ -78,6 +79,14 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public boolean isTerms() {
+        return terms;
+    }
+
+    public void setTerms(boolean terms) {
+        this.terms = terms;
     }
 
 }

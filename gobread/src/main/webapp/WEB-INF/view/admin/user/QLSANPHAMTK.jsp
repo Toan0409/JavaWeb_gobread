@@ -460,77 +460,6 @@
             </nav>
           </div>
 
-          <!DOCTYPE html>
-          <html lang="vi">
-
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Quản Lý Sản Phẩm & Tồn Kho</title>
-            <style>
-              body {
-                font-family: Arial, sans-serif;
-                margin: 20px;
-                padding: 20px;
-                background-color: #f8f9fa;
-              }
-
-              .container {
-                max-width: 1000px;
-                margin: auto;
-                background: white;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-              }
-
-              h2 {
-                text-align: center;
-              }
-
-              table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 20px;
-              }
-
-              th,
-              td {
-                border: 1px solid #ddd;
-                padding: 10px;
-                text-align: center;
-              }
-
-              th {
-                background-color: #007bff;
-                color: white;
-              }
-
-              .btn {
-                padding: 5px 10px;
-                margin: 2px;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-              }
-
-              .btn-add {
-                background-color: #28a745;
-                color: white;
-              }
-
-              .btn-edit {
-                background-color: #ffc107;
-                color: white;
-              }
-
-              .btn-delete {
-                background-color: #dc3545;
-                color: white;
-              }
-            </style>
-          </head>
-
           <body>
             <div class="container">
               <h2>Quản Lý Sản Phẩm & Tồn Kho</h2>
@@ -581,7 +510,6 @@
             </div>
           </body>
 
-          </html>
 
 
         </main><!-- End #main -->
