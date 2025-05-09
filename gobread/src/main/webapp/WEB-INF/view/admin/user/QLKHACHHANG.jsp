@@ -37,6 +37,24 @@
         <!-- Template Main CSS File -->
         <link href="/assets/css/style.css" rel="stylesheet">
 
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+          }
+
+          .container {
+            max-width: 1600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+        </style>
+
         <!-- =======================================================
   * Template Name: NiceAdmin
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -469,11 +487,11 @@
                         <i class="fa fa-eye">
                         </i>
                       </a>
-                      <a href="/admin/user/update/${user.id}" class="btn btn-sm btn-secondary" title="Xem chi tiết">
+                      <a href="/admin/user/update/${user.id}" class="btn btn-sm btn-secondary" title="Chỉnh sửa">
                         <i class="fa fa-pen">
                         </i>
                       </a>
-                      <a href="user/create" class="btn btn-sm btn-danger" title="Xem chi tiết">
+                      <a href="/admin/user/delete/${user.id}" class="btn btn-sm btn-danger" title="Xoá">
                         <i class="fa fa-trash">
                         </i>
                       </a>
